@@ -1,2 +1,250 @@
 @charset "UTF-8" ;
 
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #000;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;;
+}
+.wrapper{
+    width:970px;
+    margin:30px auto 40px;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+.cf::after{
+    
+    clear:both;
+    display: block;
+    content:"";
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+li{
+    list-style-type: none;
+}
+
+.heading{
+    background: url(img/bg-slash.gif);
+    font-size: 1.7rem;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 35px;
+    padding-left: 20px;
+    letter-spacing: 1.5px;
+
+}
+/* header */
+
+.header{
+    width:100%;
+    background: url(img/bg-header.gif) repeat-x;
+    padding: 28px 0 5px;
+    text-align: center;
+    box-shadow: 1px 1px 5px#f5f5f5;
+    
+    
+}
+
+.logo{
+    background: url(img/logo.png) no-repeat;
+    display: block;
+    height:60px;
+    width: 230px;
+    margin:0 auto ;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;   
+}
+
+.nav__item{
+    display: inline-block;
+    font-size:1.2rem;
+    width: 100px;
+    height: 30px;
+    margin: 0 12px 0;
+    border-radius: 8px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+.nav__item:hover{
+    background-color: #d03c56;
+    color: #fff;
+}
+
+.nav{
+    padding: 10px 0 5px;
+}
+
+.nav__item.active{
+    background-color: #d03c56;
+    color: #fff;
+}
+
+.hidden{
+    display: none;
+}
+
+/* e  header */
+
+
+/* main  */
+
+.main{
+    width:660px;
+    float:left;
+}
+
+.hot__wrap__link{
+    transition:0.8s;
+    display: block;
+    
+}
+.hot__wrap__link:hover{
+    opacity: 0.8;
+}
+
+.hot__img{
+    background: url(img/hot-topic.jpg) no-repeat;
+    width: 50%;
+    height:300px;
+    display: block;
+    float:left;
+}
+
+.hot__txtbx{
+    width: 50%;
+    display: block;
+    float:right;
+    background-color: #003366;
+    height:300px;
+    position: relative;
+}
+
+.hot__title{
+    color: #f5f5f5;
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    position: absolute;
+    top:110px;
+    left:25px;
+}
+
+.hot__txt{
+    font-size: 1.2rem;
+    color: beige;
+    position: absolute;
+    width: 280px;
+    line-height:1.5 ;
+    top:190px;
+    left:25px;
+}
+
+.hot__time{
+    font-size: 1.1rem;
+    padding: 4px 10px;
+    background-color: #fff;
+    color: #4d5b6e;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 60px;
+}
+
+
+/* news */
+.news__list{
+    height: 220px;
+    overflow-y:scroll;
+    
+}
+.news__list time{
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+
+.news__item__link{
+    display: block;  
+    padding: 15px; 
+    transition: 0.3s;
+}
+.news__item__link:hover{
+   background-color:rgba(000,000,000,0.1);
+}
+
+.news__item:nth-of-type(even){
+    background: url(img/bg-slash.gif);
+}
+
+.news__cate{
+    display: inline-block;
+    width: 50px;
+    border-radius: 5px;
+    line-height: 17px; 
+    letter-spacing: 1.2px;
+    color: #fff;
+    text-align: center;   
+    margin: 0 15px;
+}
+
+.blue{
+    background-color: #003366;
+}
+.red{
+    background-color: #d03c56;
+}
+
+.news__index{
+    display: inline-block;
+    font-size: 1.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 400px;
+    text-overflow: ellipsis;
+}
+
+
+/* e   news */
+
+/* blog */
+.blog__box{
+    width: 315px;
+    padding: 30px;
+    
+}
+.blog__img{
+
+    
+}
+
+
+
+
+
+/* e   main  */
+
+
+.sidemenu{
+    width:275px;
+    float:right;
+}
+
+
+
+.footer{
+    width:100%;
+  
+}
+
+
