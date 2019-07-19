@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+・cssの頭でページ全体で共通する定義をしておく
+今回しておくべきだったのが
+a:link, a:visited, a:hover, a:active{
+ color:---;
+ text-decoration:none
+}
+
+
+・main要素はIEでもブロック要素として表示されるように
+display : blockの指定が必要
+
+・clearfix::after{
+ content="";
+ display:block;
+ clear:both;
+}
+
+
+・サイドメニュー一覧は今回ランキングなので、ol/li要素にするべきだった
+ol要素にcounter-reset:カウンタ名
+数字を入れる代わりに
+
+content:counter(カウンタ名); 
+counter-increment:カウンタ名;
+
+でカウントアップできるよ
+	
+
+・backgroundプロパティはショートハンドなのでまとめて記述できるよ
+color,image,repeat,position,size,attachment
+個別プロパティは後！！！！
+
+・box-shadow:（inset）、右、下、ぼかし、拡張、色
+カンマでつなげば内側と外側どっちも影つけれるよ
+
+・マージン相殺：
+隣接した要素の上下マージンは相殺される
+入れ子になった要素の上下マージんもね。子要素のマージントップは親要素そとがわに突き抜ける（inline-block,float状態では起きない）
+
+・text-align
+ブロックコンテナ内の行の揃え位置・均等割付を指定する際に使用
+text-align:justifyとかもあるよ
+適用対象はブロックコンテナ。値の継承：する
+
+・.class名1,class名2 みたいにスペースをあけずに連続してセレクタを書くと、「class名1とclass名2両方がついた要素」を指定できる
+
+・transition-property,duration,timing-function,delay
+
+・box-sizing:border-box
+paddingとborderを含めた要素そのもののサイズで計算できるようになる
+
+・line-heightは子要素に引き継がれる。
+数値のみで指定しておけば、要素のフォントサイズに応じた相対的な行間をしていできる
+
+newsboxはheightじゃなくて、max-heightのほうがよかったね
+
+・nth-of-type（n） : 同じ階層のｎ番目の要素にスタイルあてれる
+ex) nth-of-type(3n) ３の倍数
+
+・nth-child :要素の種類にかかわらず同じ階層のすべての要素を通して数える
+
+・背景色も背景画像も同じ要素（今回はa要素）に指定し、ホバーしたときにはbackgroung-color(半透過)を上書きすることで両方見せることができる
+
+・スクロール表示の際、リストの横幅が変わるのでレイアウトを維持できるように設計する。親要素に対する割合でするとやりやすい。
+
+・改行による半角スペース挿入対策
+親要素にfont-size:0を指定することにより、挿入された半角スペースのサイズを0にできる。→子要素にフォントを再指定する。
+
+
+・boxに画像をスマートに張る方法 
+
+.image{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+・vertical-align
+要素の縦方向の配置の基準を指定できる。
+inline要素、テーブルセルの要素に対してのみ有効
+数値+単位で指定すると親要素のベースラインから指定の値分距離を置いた位置にそろえれる。
+border分引いたりするの忘れない
+
+・transform
+scale,skew,translate,rotate,
+transform-originで変形の基準点を指定できる。
+
+・子孫セレクタ、子セレクタ(>)、隣接セレクタ(+)
+
+・.A > *     ←なるほど
+
+・cursorプロパティではurl指定もできる
+
+・背景画像を指定する場合、画像の読み込みに失敗したときのことも想定しておく。画像に近い色を指定しておくともしもの場合でも文字は読み込める
+
+・フッターナビ(width:100%)をmain-wrapperのwidth（970px）の右端に合わせる方法
+
+.footer-nav{
+    width:970px;
+    margin:0 auto;
+    text-align:right;
+    font-size:0;
+}
+
+
+border:  inset,outset,groove,ridge;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
