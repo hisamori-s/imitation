@@ -2,141 +2,122 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>グリッドレイアウト</title>
-  <link rel="stylesheet" href="css/reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>Document</title>
 </head>
 <body>
-  <header class="header item">
-    <h1>
-      <a href="#">
-        <img class="logo" src="images/logo.png" alt="SAMPLE SITE 2">
-      </a>
-    </h1>
-    <nav class="nav">
-      <ul>
-        <li class="nav-item"><a href="#">HOME</a></li>
-        <li class="nav-item"><a href="#">ABOUT</a></li>
-        <li class="nav-item"><a href="#">MAIN DISH</a></li>
-        <li class="nav-item"><a href="#">APPETIZER</a></li>
-        <li class="nav-item"><a href="#">BREAK TIME</a></li>
-        <li class="nav-item"><a href="#">COLUMN</a></li>
-        <li class="nav-item"><a href="#">OTHER</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="item item-l item-maindish">
-    <a href="#">
-      <img class="image" src="images/image_L_1.jpg" alt="メインディッシュ">
-      <div class="category">MAIN DISH</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+  <nav class="gnav">
+    <ul class="gnav__list">
+      <li class="gnav__item"></li>
+      <li class="gnav__item"></li>
+      <li class="gnav__item"></li>
+      <li class="gnav__item"></li>
+      <li class="gnav__item"></li>
+      <li class="gnav__item"></li>
+      <li class="gnav__item"></li>
+    </ul>
+
+  </nav>
+
+  <div class="wrapper">
+
+    <section class="s-box box pink">
+      <a class="box__link" href="#">
+      <img src="images/image_S_1.jpg" alt="image" class="">
+      <div class="s-box__textArea">
+        <h2 class="heading">MAIN DISH</h2>
+        <p class="box__text">Dolor incididunt sint deserunt veniam. Enim et laborum dolore eiusmod sint minim nostrud velit nulla sit tempor dolor culpa.int minim nostrud velit nulla </p>
+      </div>
     </a>
-  </section>
-  <section class="item item-m item-appetizer">
-    <a href="#">
-      <img class="image" src="images/image_M_1.jpg" alt="前菜">
-      <div class="category">APPETIZER</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+    <section class="s-box box pink">
+      <a class="box__link" href="#">
+      <img src="images/image_S_1.jpg" alt="image" class="">
+      <div class="s-box__textArea">
+        <h2 class="heading">MAIN DISH</h2>
+        <p class="box__text">int minim nostrud velit nullaEnim et laborum dolore eiusmod sint minim nostrud velit nulla sit tempor dolor culpa. </p>
+      </div>
     </a>
-  </section>
-  <section class="item item-m item-maindish">
-    <a href="#">
-      <img class="image" src="images/image_M_2.jpg" alt="メインディッシュ">
-      <div class="category">MAIN DISH</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+    <section class="s-box box yellow">
+      <a class="box__link" href="#">
+      <img src="images/image_S_1.jpg" alt="image" class="">
+      <div class="s-box__textArea">
+        <h2 class="heading">MAIN DISH</h2>
+        <p class="box__text">Dolor incididunt sint deserunt veniam. Enim et laborum dolore eiusmod sint minim nostrud velit nulla sit tempor dolor culpa. </p>
+      </div>
     </a>
-  </section>
-  <section class="item item-maindish">
-    <a href="#">
-      <img class="image" src="images/image_S_1.jpg" alt="メインディッシュ">
-      <div class="category">MAIN DISH</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+    <section class="s-box box yellow">
+      <a class="box__link" href="#">
+      <img src="images/image_S_1.jpg" alt="image" class="">
+      <div class="s-box__textArea">
+        <h2 class="heading">MAIN DISH</h2>
+        <p class="box__text">Dolor incididunt sint deserunt veniam. </p>
+      </div>
     </a>
-  </section>
-  <section class="item item-appetizer">
-    <a href="#">
-      <img class="image" src="images/image_S_2.jpg" alt="前菜">
-      <div class="category">APPETIZER</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    </section>
+    <section class="s-box box blue">
+      <a class="box__link" href="#">
+      <img src="images/image_S_1.jpg" alt="image" class="">
+      <div class="s-box__textArea">
+        <h2 class="heading">MAIN DISH</h2>
+        <p class="box__text">Dolor incididunt sint deserunt veniam. Enim et laborum dolore eiusmod  sit tempor dolor culpa. </p>
+      </div>
     </a>
-  </section>
-  <section class="item item-m item-breaktime">
-    <a href="#">
-      <img class="image" src="images/image_M_3.jpg" alt="おやつの時間">
-      <div class="category">BREAK TIME</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+    </section>
+    <section class="s-box box blue">
+      <a class="box__link" href="#">
+      <img src="images/image_S_1.jpg" alt="image" class="">
+      <div class="s-box__textArea">
+        <h2 class="heading">MAIN DISH</h2>
+        <p class="box__text">Dolor incididunt sint deserunt veniam. Enim et laborum dolore eiusmod sint minim nostrud velit nulla sit tempor dolor culpa. </p>
+      </div>
     </a>
-  </section>
-  <section class="item item-column">
-    <a href="#">
-      <img class="image" src="images/image_S_3.jpg" alt="コラム">
-      <div class="category">COLUMN</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+    <section class="s-box box pink">
+      <a class="box__link" href="#">
+      <img src="images/image_S_1.jpg" alt="image" class="">
+      <div class="s-box__textArea">
+        <h2 class="heading">MAIN DISH</h2>
+        <p class="box__text">Dolor incididunt sint deserunt veniam. Enim et laborum dolore eiusmod nostrud velit nulla sit tempor dolor culpa. </p>
+      </div>
     </a>
-  </section>
-  <section class="item item-breaktime">
-    <a href="#">
-      <img class="image" src="images/image_S_4.jpg" alt="おやつの時間">
-      <div class="category">BREAK TIME</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    </section>
+    <section class="s-box box green">
+      <a class="box__link" href="#">
+      <img src="images/image_S_1.jpg" alt="image" class="">
+      <div class="s-box__textArea">
+        <h2 class="heading">MAIN DISH</h2>
+        <p class="box__text">Dolor incididunt sint deserunt veniam. Enim et laborum dolore eiusmod sint minim nostrud velit nulla culpa. </p>
+      </div>
     </a>
-  </section>
-  <section class="item item-maindish">
-    <a href="#">
-      <img class="image" src="images/image_S_5.jpg" alt="メインディッシュ">
-      <div class="category">MAIN DISH</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+    <section class="s-box box blue">
+      <a class="box__link" href="#">
+      <img src="images/image_S_1.jpg" alt="image" class="">
+      <div class="s-box__textArea">
+        <h2 class="heading">MAIN DISH</h2>
+        <p class="box__text">Dolor incididunt sint deserunt veniam. Enim et laborum dolore eiusmod sint minim nostrud velit nulla sit tempor dolor culpa. </p>
+      </div>
     </a>
-  </section>
-  <section class="item item-breaktime">
-    <a href="#">
-      <img class="image" src="images/image_S_6.jpg" alt="おやつの時間">
-      <div class="category">BREAK TIME</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+    <section class="s-box box yellow">
+      <a class="box__link" href="#">
+      <img src="images/image_S_1.jpg" alt="image" class="">
+      <div class="s-box__textArea">
+        <h2 class="heading">MAIN DISH</h2>
+        <p class="box__text">Dolor incididunt sint deserunt veniam. Enim et laborum dolore eiusmod sint minim nostrud velit nulla sit tempor dolor culpa.ncididunt sint deserunt veniam. Enim et laborum dolore eiusmod sint </p>
+      </div>
     </a>
-  </section>
-  <section class="item item-maindish">
-    <a href="#">
-      <img class="image" src="images/image_S_7.jpg" alt="メインディッシュ">
-      <div class="category">MAIN DISH</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-    </a>
-  </section>
-  <section class="item item-breaktime">
-    <a href="#">
-      <img class="image" src="images/image_S_8.jpg" alt="おやつの時間">
-      <div class="category">BREAK TIME</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-    </a>
-  </section>
-  <section class="item item-m item-appetizer">
-    <a href="#">
-      <img class="image" src="images/image_M_4.jpg" alt="前菜">
-      <div class="category">APPETIZER</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-    </a>
-  </section>
-  <section class="item item-column">
-    <a href="#">
-      <img class="image" src="images/image_S_9.jpg" alt="コラム">
-      <div class="category">COLUMN</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </a>
-  </section>
-  <section class="item item-maindish">
-    <a href="#">
-      <img class="image" src="images/image_S_10.jpg" alt="メインディッシュ">
-      <div class="category">MAIN DISH</div>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </a>
-  </section>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.js"></script>
-  <script>
-    new Masonry('body', {
-      itemSelector: '.item',
-      columnWidth: 180,
-      gutter: 4
-    });
-  </script>
+    </section>
+
+
+  </div>
+  
 </body>
 </html>
