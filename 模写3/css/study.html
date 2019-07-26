@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    ・backgorundプロパティ内でbackground-attachmentの値をfixedにすると、背景画像がスクロールされないようになる。文章と背景の位置にずれが生じていい感じになる。
+
+    ・背景img 1920px * 1100pxの画像使ったらいい感じ。
+    縦長のはあまり使えないことが多い
+
+    ・background-size: coverで、背景に指定した画像が元の比率を保ったまま領域全体を覆う
+
+ 
+    ・CSSではセレクタの詳細度が同じ場合は後にCSSに書かれたスタイルで上書きされていく。
+    高い順に 
+    style - id - (class,:hoverなどの疑似クラス,属性)- （要素型、疑似要素）
+
+    ・各セクションのcssコーディングの最初に、paddingの余白を設定していくとわかりやすい
+    
+    ・疑似要素で2重線の実装(h2.headingに実装するとして)▼▼
+
+    .heading{
+        position: relative;
+        display: inline-block;
+         margin: 30px 0 15px;
+         padding-bottom: 15px;
+         letter-spacing: 2px;
+         font-size: 4rem;
+        }
+        
+        .heading::before,
+        .heading::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-bottom: 1px solid #999;
+        }
+        
+        .heading::before{
+            bottom:5px;
+        }
+
+
+・display:tableについて
+
+    displayプロパティにはtable,table-cellって値をしていできる。
+    横に並べたい要素にdisplay:table-cell;
+    囲む親要素にdisplay:table;を指定
+
+    そのままだと子要素ぶんの幅までしか広がらないので、display:blockみたくしたい場合はwidth:100%にする。
+
+    table-cell同士の間隔を開けたい場合は、marginを使わない。
+    親要素にborder-collapse:separate;を指定したうえ、
+    border-spacingプロパティに間隔を指定する。値を2つにすると上下/左右を別々に指定できる
+
+    親要素に table-layout:fixed を指定すると、table-cellの内容物の横幅が異なる場合でも、横幅を均等にできる。
+
+・position:absolute/fixed を指定した場合、強制的にブロックレベル要素になる。
+
+・要素が絶対配置されている場合、親要素にheightプロパティがしていされていなくても、heightプロパティを％指定できる。
+
+・heightプロパティに％指定するときは親要素の縦幅を基準にする
+ 一方、paddingとmarginは親要素の横幅を基準にする
+ 画面幅に応じた画像などに合わせて、.boxなどを作る場合、縦幅はmarginに％指定するとうまく領域を確保できる    
+
+・ゴーストボタンとは
+背景が透明か半透明で、枠線と文字のみが浮き上がって見えるボタンのこと
+.buttonとは別に.button ghostクラスも記入しておいて、
+.button-ghost{
+    border: 1px solid #fff;
+    background-color: rgba(255,255,255,0.15)
+}
+こんな感じ
+
+・z-index はposition:static以外の要素に対してのみ有効
+
+
+</body>
+</html>

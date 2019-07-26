@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- memo
+
+・a:link　＝ 未訪問リンク  
+  a:visited = 訪問済みリンク
+
+・margin指定するときは p要素などのline-heightを考慮しよう。思ったより間隔あいたりするから。
+
+・::before, ::after疑似要素のコンテントプロパティでできること
+
+content: 'テキスト';　
+content: url();
+content: attr(属性名);
+content:counter(カウンタ名)；
+ちなみに上記は、違うものでも空白をあけることで、続けて表示できる。よ。あと、デフォルトはインラインようそ。
+
+
+・疑似要素で〇をつくる例
+
+display:inline-block(もしくはブロック)
+widthとheight指定
+border指定
+border-radius : 50%;
+
+
+・vertical-alignはインラインブロック要素にも使えるよ
+
+
+・値　inherit の意味
+
+親要素の値を引き継ぎますってこと
+
+
+・padding指定しているボックス内にaリンクしている場合、パディング内エリアしかaが適応しない。どうしよう
+
+いったんネガティブmarginでaをボックスと同じサイズまで広げて、再度同じ幅のpaddingを持たせるといいよ。
+
+
+masonry cdn
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.js"></script>
+<script>
+  new Masonry('body',{
+    itemSelector: '.item',
+    columnWidth: 180,
+    gutter: 4
+  });
+</script>
+
+* gutterってのは左右の間隔。上下は別途cssで指定する。
+
+
+
+ ・hoverで下線が両側に伸びる ↓
+ 
+.nav-item a{
+  display: inline-block;
+}
+inline-blockにすることでaの幅をリンクテキストと同じに保ちつつ子要素の%指定を有効にできる
+
+.nav-item a::after{
+  content: '';
+  display: block;
+  width: 0;
+  margin: 6px auto 0; これで親要素に対して中央寄せ
+  border-bottom: 1px solid #7c5119;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item a:hover::after{
+  width: 100%;
+}
+
+
+
+ -->
+
+
+
+
+
+
+    
+</body>
+</html>
