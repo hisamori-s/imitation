@@ -129,6 +129,10 @@ display: inline-block;
     opacity: 0.9;
 }
 
+.sp-works{
+    display: none;
+}
+
 .works-wrapper{
     display: table;
     width: 100%;
@@ -226,6 +230,37 @@ display: inline-block;
     margin-top: 60px;
 }
 
+.work-box{
+    overflow: hidden;
+}
+
+.work-box img{
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+
+.work-box:nth-of-type(odd) img{
+    -webkit-transform-origin: top center;
+    transform-origin: top center; 
+}
+.work-box:nth-of-type(even) img{
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center; 
+}
+
+
+.work-box:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
 /* skill------------------------------- */
 .skills{
     padding: 80px 0;
@@ -246,14 +281,16 @@ display: inline-block;
 
 .skill-icon{
     margin-bottom: 35px;
-    color: #f1b400;
-    font-size: 9rem;
+    color: #ff7f50;
+    font-size: 10rem;
     
 }
 
 .skill-title{
     margin: 0 20px 20px;
-    font-size: 2rem;
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #585858;
 }
 
 .skill-text{
@@ -286,6 +323,93 @@ display: inline-block;
 
 @media(max-width : 768px){
     body{
-        background: url(../images/bg3.jpg);
+        background: url(../images/sp-bg.jpg)  no-repeat fixed left bottom;
+        font-size: 1.2rem;
     }
+
+    .site-title-sub::before,
+    .site-title-sub::after{
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+    .site-title-sub{
+        font-size: 1.7rem;
+    }
+    .site-title{
+        margin-top: 35px;
+        font-size: 5rem;
+    }
+
+    .header{
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .button:hover{
+        opacity: 1;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .about-text{
+        line-height: 1.8;
+    }
+
+    /* works------- */
+ .works-wrapper,
+ .work-box{
+     display: block;
+ }
+.work-image{
+    display: none;
+}
+ .works-description{
+     position: relative;
+ }
+.work-box::after{
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none;
+}
+
+.works{
+    display: none;
+}
+
+.sp-works{
+    display: block;
+    background-color: rgba(0,0,0,0.7);
+    padding: 50px 0 50px;
+}
+
+.sp-work-image{
+    width: 100%;
+}
+.sp-button-ghost{
+    height: 40px;
+}
+
+.sp-work-description{
+    padding: 30px 0;
+}
+
+/* skill ------------- */
+
+.skills-wrapper,
+.skill-box{
+    display: block;
+    font-size: 1.3rem;
+}
+
+.skill-box{
+    margin: 40px auto;
+}
+
+.skill-text{
+    margin: 0;
+}
+
+
+
 }
